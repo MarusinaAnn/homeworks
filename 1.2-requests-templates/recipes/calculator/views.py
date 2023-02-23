@@ -19,6 +19,36 @@ DATA = {
     # можете добавить свои рецепты ;)
 }
 
+def recipes_view(request, name):
+    if name in DATA:
+        data = DATA[name]
+        servings = int(request.GET.get('servings', 1))
+        if servings != 1:
+            result = dict()
+            for ingredient, amount in data.items():
+                new_value = amount * servings
+                result[ingredient] = new_value
+            context = {
+                'name': name,
+                'recipe': result
+            }
+        else:
+            context = {
+                'name': name,
+                'recipe': data
+            }
+
+    else:
+        context = None
+    return render(request, template_name='calculator/index.html', context=context)
+
+
+def all_view(request):
+    all_recipes = list(DATA.keys())
+    context = {'all_recipes': all_recipes}
+    return render(request, template_name='calculator/all.html', context=context)
+
+   
 # Напишите ваш обработчик. Используйте DATA как источник данных
 # Результат - render(request, 'calculator/index.html', context)
 # В качестве контекста должен быть передан словарь с рецептом:
