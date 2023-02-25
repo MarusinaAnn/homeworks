@@ -2,3 +2,6 @@ id;name;image;price;release_date;lte_exists
 1;Samsung Galaxy Edge 2;https://avatars.mds.yandex.net/get-mpic/364668/img_id5636027222104023144.jpeg/orig;73000;2016-12-12;True
 2;Iphone X;https://avatars.mds.yandex.net/get-mpic/200316/img_id270362589725797013.png/orig;80000;2017-06-01;True
 3;Nokia 8;https://avatars.mds.yandex.net/get-mpic/397397/img_id6752445806321208103.jpeg/orig;20000;2013-01-20;False
+4;Nokia 3310;https://avatars.mds.yandex.net/get-mpic/5376959/img_id254582542207230665.jpeg/orig;5160;2000-09-20;False
+5;Samsung Galaxy S23 Ultra;https://avatars.mds.yandex.net/get-mpic/3907093/img_id6585214053521644141.png/orig;110000;2023-01-12;True
+6;Samsung Galaxy Z Flip4;https://cdn.citilink.ru/YY_P3s3fVhfXi9mEWZMFp99RDMXYyjpeTYAb2WshqrI/resizing_type:fit/gravity:sm/width:1200/height:1200/plain/items/1838719_v03_b.jpg;81000;2022-02-15;True
